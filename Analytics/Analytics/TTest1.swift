@@ -8,6 +8,17 @@
 import Foundation
 
 
+enum TTEventNames {
+    static let screen1 = "abc"
+    static let screen2 = "xyz"
+}
+
+
+
+enum FeatureOne {
+    
+}
+
 class Test11 {
     init() {
         TTAnalyticsManager.shared.track(event: TTEvent(name: "abc", params: [:]))
@@ -23,7 +34,6 @@ class Test22 {
 struct TTEvent: TTEventProtocol{
     var name: String
     var params: [String : Any]
-
 }
 
 protocol TTEventProtocol {
