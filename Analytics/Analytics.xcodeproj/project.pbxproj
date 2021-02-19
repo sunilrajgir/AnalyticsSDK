@@ -15,6 +15,8 @@
 		3CB7F63825E01041000B390F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB7F63625E01041000B390F /* LaunchScreen.storyboard */; };
 		3CB7F64325E01041000B390F /* AnalyticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7F64225E01041000B390F /* AnalyticsTests.swift */; };
 		3CB7F64E25E01041000B390F /* AnalyticsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7F64D25E01041000B390F /* AnalyticsUITests.swift */; };
+		3CB7F65F25E01153000B390F /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7F65E25E01153000B390F /* Test.swift */; };
+		3CB7F66425E0199C000B390F /* TTest1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7F66325E0199C000B390F /* TTest1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3CB7F64925E01041000B390F /* AnalyticsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnalyticsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB7F64D25E01041000B390F /* AnalyticsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsUITests.swift; sourceTree = "<group>"; };
 		3CB7F64F25E01041000B390F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CB7F65E25E01153000B390F /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		3CB7F66325E0199C000B390F /* TTest1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTest1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				3CB7F63425E01041000B390F /* Assets.xcassets */,
 				3CB7F63625E01041000B390F /* LaunchScreen.storyboard */,
 				3CB7F63925E01041000B390F /* Info.plist */,
+				3CB7F65E25E01153000B390F /* Test.swift */,
+				3CB7F66325E0199C000B390F /* TTest1.swift */,
 			);
 			path = Analytics;
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CB7F63025E0103F000B390F /* ViewController.swift in Sources */,
+				3CB7F66425E0199C000B390F /* TTest1.swift in Sources */,
+				3CB7F65F25E01153000B390F /* Test.swift in Sources */,
 				3CB7F62C25E0103F000B390F /* AppDelegate.swift in Sources */,
 				3CB7F62E25E0103F000B390F /* SceneDelegate.swift in Sources */,
 			);
