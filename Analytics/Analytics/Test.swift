@@ -125,20 +125,12 @@ class AnalyticsManager: AnalyticsManagerProtocol {
 
 class Test1 {
     init() {
-        let eventValue = EventValue(name: FeatureOneEvents.screen.name, params: [:])
-        AnalyticsManager.shared.trackEvent(eventValue)
+        AnalyticsManager.shared.trackEvent(FeatureOneEvents.screen)
     }
 }
 
 class Test2 {
     init() {
-        let eventValue = EventValue(name: FeatureTwoEvents.screen.name, params: [:])
-        AnalyticsManager.shared.trackEvent(eventValue)
+        AnalyticsManager.shared.trackEvent(FeatureTwoEvents.screen)
     }
-}
-
-struct EventValue:EventProtocol {
-    var name: String
-    var params: [String : Any]
-    
 }
