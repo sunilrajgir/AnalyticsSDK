@@ -18,13 +18,6 @@ enum TTParamsName {
     static let click = "click_name"
 }
 
-
-
-enum FeatureOne {
-    
-}
-
-
 enum TTfeature1 {
     @TTEvent(screenName: "screen1")
     static var featureScreen1 : TTEvent
@@ -43,13 +36,13 @@ enum TTfeature2 {
 
 class Test11 {
     init() {
-        TTAnalyticsManager.shared.track(event: TTfeature1.featureScreen1)
+        TTAnalyticsManager.shared.track(event: TTfeature1.featureScreen1, params: [:])
     }
 }
 
 class Test22 {
     init() {
-        TTAnalyticsManager.shared.track(event: TTfeature2.featureScreen2)
+        TTAnalyticsManager.shared.track(event: TTfeature2.featureScreen2, params: [:])
     }
 }
 
@@ -78,7 +71,7 @@ protocol TTEventProtocol {
 }
 
 protocol TTAnalyticsProtocol {
-    func track(event:TTEventProtocol)
+    func track(event:TTEventProtocol,params:[String:Any])
 }
 
 final class TTAnalyticsManager: TTAnalyticsProtocol {
@@ -89,25 +82,25 @@ final class TTAnalyticsManager: TTAnalyticsProtocol {
         loggers.append(TTFacebook())
     }
 
-    func track(event: TTEventProtocol) {
+    func track(event: TTEventProtocol,params:[String:Any]) {
         for logger in loggers{
-            logger.track(event: event)
+            logger.track(event: event,params:params)
         }
     }
 }
 
 protocol TTLoggerProtocol {
-    func track(event:TTEventProtocol)
+    func track(event:TTEventProtocol,params:[String:Any])
 }
 
 class TTFirebase: TTLoggerProtocol {
-    func track(event: TTEventProtocol) {
+    func track(event: TTEventProtocol,params:[String:Any]) {
         
     }
 }
 
 class TTFacebook:  TTLoggerProtocol{
-    func track(event: TTEventProtocol) {
+    func track(event: TTEventProtocol,params:[String:Any]) {
         
     }
 }
